@@ -51,7 +51,7 @@ const Footer = () => {
 
             <ButtonPrimary
               href="mailto:bastien_allegre@orange.fr"
-              label="Start project"
+              label="Démarrer un projet"
               icon="chevron_right"
               classes="reveal-up"
             />
