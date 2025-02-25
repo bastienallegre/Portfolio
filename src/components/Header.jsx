@@ -44,7 +44,7 @@ const Header = () => {
           href="#contact"
           className="btn btn-secondary max-md:hidden md:justify-self-end"
         >
-          Contact Me
+          Me contacter
         </a>
       </div>
     </header>

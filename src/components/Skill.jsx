@@ -7,11 +7,6 @@ import SkillCard from "./SkillCard";
 
 const skillItem = [
   {
-    imgSrc: "/images/figma.svg",
-    label: "Figma",
-    desc: "Design tool",
-  },
-  {
     imgSrc: "/images/css3.svg",
     label: "CSS",
     desc: "User Interface",
@@ -25,16 +20,6 @@ const skillItem = [
     imgSrc: "/images/nodejs.svg",
     label: "NodeJS",
     desc: "Web Server",
-  },
-  {
-    imgSrc: "/images/expressjs.svg",
-    label: "ExpressJS",
-    desc: "Node Framework",
-  },
-  {
-    imgSrc: "/images/mongodb.svg",
-    label: "MongoDB",
-    desc: "Database",
   },
   {
     imgSrc: "/images/react.svg",
@@ -52,11 +37,13 @@ const Skill = () => {
   return (
     <section className="section">
       <div className="container">
-        <h2 className="headline-2 reveal-up">Essential Tools I use</h2>
+        <h2 className="headline-2 reveal-up">
+          Les outils essentiels que j'utilise
+        </h2>
 
         <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] reveal-up">
-          Discover the powerful tools and technologies I use to create
-          exceptional, high-performing websites & applications.
+          Découvrez les outils et les technologies que je maitrise et que
+          j'utilise quotidiennement.
         </p>
 
         <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(250px,_1fr))]">

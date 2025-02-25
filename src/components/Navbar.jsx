@@ -38,23 +38,23 @@ const Navbar = ({ navOpen }) => {
 
   const navItems = [
     {
-      label: "Home",
+      label: "Accueil",
       link: "#home",
       className: "nav-link active",
       ref: lastActiveLink,
     },
     {
-      label: "About",
+      label: "À propos",
       link: "#about",
       className: "nav-link",
     },
     {
-      label: "Work",
+      label: "Travaux",
       link: "#work",
       className: "nav-link",
     },
     {
-      label: "Contact",
+      label: "Me contacter",
       link: "#contact",
       className: "nav-link md:hidden",
     },

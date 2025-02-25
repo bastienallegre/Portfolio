@@ -7,19 +7,19 @@ import { ButtonPrimary } from "./Button";
 
 const sitemap = [
   {
-    label: "Home",
+    label: "Accueil",
     href: "#home",
   },
   {
-    label: "About",
+    label: "À propos",
     href: "#about",
   },
   {
-    label: "Work",
+    label: "Travaux",
     href: "#work",
   },
   {
-    label: "Contact me",
+    label: "Me contacter",
     href: "#contact",
   },
 ];
@@ -27,19 +27,15 @@ const sitemap = [
 const socials = [
   {
     label: "GitHub",
-    href: "https://www.github.com/codewithsadee-org",
+    href: "https://github.com/bastienallegre",
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/codewithsadee",
-  },
-  {
-    label: "Twitter X",
-    href: "https://x.com/codewithsadee_",
+    href: "https://www.linkedin.com/in/bastien-allegre-859479345/",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/codewithsadee",
+    href: "https://www.instagram.com/bastien.allegre/",
   },
 ];
 
@@ -50,7 +46,7 @@ const Footer = () => {
         <div className="lg:grid lg:grid-cols-2">
           <div className="mb-10">
             <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up">
-              Let&apos;s work together today!
+              Travaillons ensemble dès aujourd'hui !
             </h2>
 
             <ButtonPrimary
@@ -79,7 +75,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <p className="mb-2 reveal-up">Socials</p>
+              <p className="mb-2 reveal-up">Réseaux Sociaux</p>
               <ul>
                 {socials.map(({ label, href }, key) => (
                   <li key={key}>

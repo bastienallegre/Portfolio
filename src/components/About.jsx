@@ -2,11 +2,11 @@ import React from "react";
 
 const aboutItems = [
   {
-    label: "Project done",
+    label: "Projets réalisés",
     number: 20,
   },
   {
-    label: "Years of experience",
+    label: "Années d'expérience",
     number: 2,
   },
 ];
@@ -17,11 +17,18 @@ const About = () => {
       <div className="container">
         <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
           <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
-            Welcome! I&apos;m Bastien, a professional developer with a knack for
-            crafting visually stunning and highly functional websites and
-            application. Combining creativity and technical expertise. I
-            transform your vision into digital masterpiece that excels in both
-            appearance and performance.
+            Bonjour, je suis Bastien un développeur passionné, j’aime concevoir
+            des applications fonctionnelles et bien structurées. Mon expertise
+            s’étend sur plusieurs technologies, notamment Python, JavaScript,
+            PostgreSQL, Symfony, Java, C, C++, React et Next.js. J’ai travaillé
+            sur divers projets, allant d’applications web à des solutions
+            mobiles, en mettant un point d’honneur à assurer une expérience
+            utilisateur fluide et optimisée. Mon approche est axée sur la
+            rigueur, la collaboration et la résolution de problèmes, des
+            qualités que j’ai affinées en travaillant sur des projets comme
+            Phare Away et d'autres applications éducatives et interactives.
+            Curieux et soucieux du détail, je m’investis pleinement dans chaque
+            développement, en veillant à livrer un code propre et maintenable.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 md:gap-7">
