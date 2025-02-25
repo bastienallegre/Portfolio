@@ -1,5 +1,5 @@
 /**
- * module
+ * modules
  */
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
@@ -8,6 +8,7 @@ import { createRoot } from "react-dom/client";
  * CSS
  */
 import "./index.css";
+import "lenis/dist/lenis.css";
 
 /**
  * components
