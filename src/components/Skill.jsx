@@ -17,6 +17,11 @@ const skillItem = [
     desc: "Interaction",
   },
   {
+    imgSrc: "/images/android-studio.svg",
+    label: "Android Studio",
+    desc: "Mobile Development",
+  },
+  {
     imgSrc: "/images/nodejs.svg",
     label: "NodeJS",
     desc: "Web Server",
@@ -31,6 +36,52 @@ const skillItem = [
     label: "TailwindCSS",
     desc: "User Interface",
   },
+  {
+    imgSrc: "/images/c.svg",
+    label: "C",
+    desc: "Back-end",
+  },
+  {
+    imgSrc: "/images/symfony.svg",
+    label: "Symfony",
+    desc: "Framework",
+  },
+  {
+    imgSrc: "/images/c++.svg",
+    label: "C++",
+    desc: "Back-end",
+  },
+  {
+    imgSrc: "/images/java.svg",
+    label: "Java",
+    desc: "Object Oriented / Back-end",
+  },
+
+  {
+    imgSrc: "/images/php.svg",
+    label: "PHP",
+    desc: "Back-end",
+  },
+  {
+    imgSrc: "/images/postgresql.svg",
+    label: "PostgreSQL",
+    desc: "Database",
+  },
+  {
+    imgSrc: "/images/nextjs.svg",
+    label: "NextJS",
+    desc: "Web Server",
+  },
+  {
+    imgSrc: "/images/python.svg",
+    label: "Python",
+    desc: "Back-end",
+  },
+  {
+    imgSrc: "/images/typescript.svg",
+    label: "TypeScript",
+    desc: "Framework",
+  },
 ];
 
 const Skill = () => {
@@ -42,8 +93,8 @@ const Skill = () => {
         </h2>
 
         <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] reveal-up">
-          Découvrez les outils et les technologies que je maitrise et que
-          j'utilise quotidiennement.
+          Découvrez les outils et technologies que je maitrise et utilise
+          quotidiennement.
         </p>
 
         <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(250px,_1fr))]">
