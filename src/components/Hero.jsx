@@ -35,7 +35,12 @@ const Hero = () => {
           </h2>
 
           <div className="flex items-center gap-3">
-            <ButtonPrimary label="Télécharger CV" icon="download" />
+            <ButtonPrimary
+              href="public/CV_Bastien_Allegre.pdf"
+              target="_blank"
+              label="Télécharger CV"
+              icon="download"
+            />
             <ButtonOutline
               href="#about"
               label="Défiler vers le bas"
