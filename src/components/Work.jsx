@@ -28,7 +28,7 @@ const works = [
     imgSrc: "/images/project-n4.jpg",
     title: "eCommerce website and Database",
     tags: ["Synfony", "PHP", "PostgreSQL"],
-    projectLink: "",
+    projectLink: "https://github.com/bastienallegre/Boutique-Synfony",
   },
   {
     imgSrc: "/images/project-n5.jpg",
@@ -40,7 +40,7 @@ const works = [
     imgSrc: "/images/project-n6.jpg",
     title: "BackOffice Intership website",
     tags: ["Synfony", "PHP", "Twig"],
-    projectLink: "",
+    projectLink: "https://github.com/hugo-brb/CarnetStage",
   },
 ];
 
