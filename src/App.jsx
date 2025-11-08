@@ -41,7 +41,10 @@ const App = () => {
         ease: "power2.out",
       });
     });
-  });
+
+    // Rafraîchir ScrollTrigger après que tout soit chargé
+    ScrollTrigger.refresh();
+  }, { dependencies: [], revertOnUpdate: true });
 
   return (
     <ReactLenis root>
