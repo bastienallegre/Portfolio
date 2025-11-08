@@ -1,5 +1,3 @@
-import React from "react";
-
 const aboutItems = [
   {
     label: "Projets réalisés",
@@ -26,7 +24,7 @@ const About = () => {
             utilisateur fluide et optimisée. Mon approche est axée sur la
             rigueur, la collaboration et la résolution de problèmes, des
             qualités que j’ai affinées en travaillant sur des projets comme
-            Phare Away et d'autres applications éducatives et interactives.
+            Phare Away et d&apos;autres applications éducatives et interactives.
             Curieux et soucieux du détail, je m’investis pleinement dans chaque
             développement, en veillant à livrer un code propre et maintenable.
           </p>

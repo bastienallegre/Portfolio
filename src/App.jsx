@@ -22,11 +22,10 @@ import Skill from "./components/Skill";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { element } from "prop-types";
 
 const App = () => {
   useGSAP(() => {
-    const elements = gsap.utils.toArray(" .reveal-up");
+    const elements = gsap.utils.toArray(".reveal-up");
 
     elements.forEach((element) => {
       gsap.to(element, {

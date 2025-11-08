@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  * Component
  */
@@ -27,19 +25,19 @@ const works = [
   {
     imgSrc: "/images/project-n4.jpg",
     title: "eCommerce website and Database",
-    tags: ["Synfony", "PHP", "PostgreSQL"],
+    tags: ["Symfony", "PHP", "PostgreSQL"],
     projectLink: "https://github.com/bastienallegre/Boutique-Synfony",
   },
   {
     imgSrc: "/images/project-n5.jpg",
-    title: "Educativ math mobile app",
+    title: "Educational math mobile app",
     tags: ["Android Studio", "Java", "XML"],
     projectLink: "",
   },
   {
     imgSrc: "/images/project-n6.jpg",
-    title: "BackOffice Intership website",
-    tags: ["Synfony", "PHP", "Twig"],
+    title: "BackOffice Internship website",
+    tags: ["Symfony", "PHP", "Twig"],
     projectLink: "https://github.com/hugo-brb/CarnetStage",
   },
 ];

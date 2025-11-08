@@ -1,4 +1,3 @@
-import React from "react";
 
 const socialLinks = [
   {
@@ -67,16 +66,16 @@ const Contact = () => {
           </h2>
 
           <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
-            Contactez-nous dès aujourd'hui pour discuter des besoins de votre
+            Contactez-nous dès aujourd&apos;hui pour discuter des besoins de votre
             projet et commencer à collaborer !
           </p>
 
           <div className="flex items-center gap-2 mt-auto">
             {socialLinks.map(({ href, icon }, key) => (
               <a
-                ket={key}
+                key={key}
                 href={href}
-                targer="_blank"
+                target="_blank"
                 className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 reveal-up"
               >
                 {icon}

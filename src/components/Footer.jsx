@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  * Compopnent
  */
@@ -46,7 +44,7 @@ const Footer = () => {
         <div className="lg:grid lg:grid-cols-2">
           <div className="mb-10">
             <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up">
-              Travaillons ensemble dès aujourd'hui !
+              Travaillons ensemble dès aujourd&apos;hui !
             </h2>
 
             <ButtonPrimary

@@ -1,7 +1,6 @@
 /**
  * Node modules
  */
-import React from "react";
 import PropTypes from "prop-types";
 
 const ProjectCard = ({ imgSrc, title, tags, projectLink, classes }) => {

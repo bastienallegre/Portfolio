@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  * Components
  */
@@ -26,12 +24,12 @@ const Hero = () => {
               <span className="relative w-2 h-2 rounded-full bg-emerald-400">
                 <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping"></span>
               </span>
-              En recherche d'emploi
+              En recherche d&apos;emploi
             </div>
           </div>
 
           <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">
-            Construire des applications modernes et évolutives pour l'avenir
+            Construire des applications modernes et évolutives pour l&apos;avenir
           </h2>
 
           <div className="flex items-center gap-3">
