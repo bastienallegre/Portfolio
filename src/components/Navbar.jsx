@@ -9,17 +9,24 @@ const Navbar = ({ navOpen }) => {
   const activeBox = useRef();
 
   const initActiveBox = () => {
-    activeBox.current.style.top = lastActiveLink.current.offsetTop + "px";
-
-    activeBox.current.style.left = lastActiveLink.current.offsetLeft + "px";
-
-    activeBox.current.style.width = lastActiveLink.current.offsetWidth + "px";
-
-    activeBox.current.style.height = lastActiveLink.current.offsetHeight + "px";
+    if (lastActiveLink.current && activeBox.current) {
+      activeBox.current.style.top = lastActiveLink.current.offsetTop + "px";
+      activeBox.current.style.left = lastActiveLink.current.offsetLeft + "px";
+      activeBox.current.style.width = lastActiveLink.current.offsetWidth + "px";
+      activeBox.current.style.height = lastActiveLink.current.offsetHeight + "px";
+    }
   };
 
-  useEffect(initActiveBox, []);
-  window.addEventListener("resize", initActiveBox);
+  useEffect(() => {
+    initActiveBox();
+
+    window.addEventListener("resize", initActiveBox);
+
+    // Cleanup pour éviter les memory leaks
+    return () => {
+      window.removeEventListener("resize", initActiveBox);
+    };
+  }, []);
 
   const activeCurrentLink = (event) => {
     lastActiveLink.current?.classList.remove("active");
@@ -37,22 +44,26 @@ const Navbar = ({ navOpen }) => {
 
   const navItems = [
     {
+      id: "home",
       label: "Accueil",
       link: "#home",
       className: "nav-link active",
-      ref: lastActiveLink,
+      isActive: true,
     },
     {
+      id: "about",
       label: "À propos",
       link: "#about",
       className: "nav-link",
     },
     {
+      id: "work",
       label: "Travaux",
       link: "#work",
       className: "nav-link",
     },
     {
+      id: "contact",
       label: "Me contacter",
       link: "#contact",
       className: "nav-link md:hidden",
@@ -60,11 +71,11 @@ const Navbar = ({ navOpen }) => {
   ];
   return (
     <nav className={"navbar " + (navOpen ? "active" : "")}>
-      {navItems.map(({ label, link, className, ref }, key) => (
+      {navItems.map(({ id, label, link, className, isActive }) => (
         <a
           href={link}
-          key={key}
-          ref={ref}
+          key={id}
+          ref={isActive ? lastActiveLink : null}
           className={className}
           onClick={activeCurrentLink}
         >
