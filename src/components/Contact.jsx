@@ -57,6 +57,24 @@ const socialLinks = [
 ];
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const formData = new FormData(e.target);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+    
+    // Construire le mailto link
+    const subject = `Message de ${name} via le portfolio`;
+    const body = `Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+    
+    const mailtoLink = `mailto:bastien_allegre@orange.fr?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Ouvrir le client mail
+    window.location.href = mailtoLink;
+  };
+
   return (
     <section id="contact" className="section">
       <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
@@ -66,7 +84,7 @@ const Contact = () => {
           </h2>
 
           <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
-            Contactez-nous dès aujourd&apos;hui pour discuter des besoins de votre
+            Contactez-moi dès aujourd&apos;hui pour discuter des besoins de votre
             projet et commencer à collaborer !
           </p>
 
@@ -85,8 +103,7 @@ const Contact = () => {
         </div>
 
         <form
-          action="https://getform.io/f/bnlqqvpb"
-          method="POST"
+          onSubmit={handleSubmit}
           className="xl:pl-10 2xl:pl-20"
         >
           <div className="mb:grid mb:items-center mb:grid-cols-2 mb:gap-2">
