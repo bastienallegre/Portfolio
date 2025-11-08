@@ -1,6 +1,7 @@
 
 const socialLinks = [
   {
+    id: "github",
     href: "https://github.com/bastienallegre",
     icon: (
       <svg
@@ -19,6 +20,7 @@ const socialLinks = [
     alt: "GitHub",
   },
   {
+    id: "linkedin",
     href: "https://www.linkedin.com/in/bastien-allegre-859479345/",
     icon: (
       <svg
@@ -37,6 +39,7 @@ const socialLinks = [
     alt: "LinkedIn",
   },
   {
+    id: "instagram",
     href: "https://www.instagram.com/bastien.allegre/",
     icon: (
       <svg
@@ -89,11 +92,12 @@ const Contact = () => {
           </p>
 
           <div className="flex items-center gap-2 mt-auto">
-            {socialLinks.map(({ href, icon }, key) => (
+            {socialLinks.map(({ id, href, icon }) => (
               <a
-                key={key}
+                key={id}
                 href={href}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 reveal-up"
               >
                 {icon}

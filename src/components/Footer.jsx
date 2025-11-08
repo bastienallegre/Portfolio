@@ -1,22 +1,26 @@
 /**
- * Compopnent
+ * Component
  */
 import { ButtonPrimary } from "./Button";
 
 const sitemap = [
   {
+    id: "home",
     label: "Accueil",
     href: "#home",
   },
   {
+    id: "about",
     label: "À propos",
     href: "#about",
   },
   {
+    id: "work",
     label: "Travaux",
     href: "#work",
   },
   {
+    id: "contact",
     label: "Me contacter",
     href: "#contact",
   },
@@ -24,14 +28,17 @@ const sitemap = [
 
 const socials = [
   {
+    id: "github",
     label: "GitHub",
     href: "https://github.com/bastienallegre",
   },
   {
+    id: "linkedin",
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/bastien-allegre-859479345/",
   },
   {
+    id: "instagram",
     label: "Instagram",
     href: "https://www.instagram.com/bastien.allegre/",
   },
@@ -59,8 +66,8 @@ const Footer = () => {
             <div>
               <p className="mb-2 reveal-up">Sitemap</p>
               <ul>
-                {sitemap.map(({ label, href }, key) => (
-                  <li key={key}>
+                {sitemap.map(({ id, label, href }) => (
+                  <li key={id}>
                     <a
                       href={href}
                       className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up"
@@ -75,11 +82,12 @@ const Footer = () => {
             <div>
               <p className="mb-2 reveal-up">Réseaux Sociaux</p>
               <ul>
-                {socials.map(({ label, href }, key) => (
-                  <li key={key}>
+                {socials.map(({ id, label, href }) => (
+                  <li key={id}>
                     <a
                       href={href}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up"
                     >
                       {label}

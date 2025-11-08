@@ -1,9 +1,11 @@
 const aboutItems = [
   {
+    id: "projects",
     label: "Projets réalisés",
     number: 20,
   },
   {
+    id: "experience",
     label: "Années d'expérience",
     number: 2,
   },
@@ -30,8 +32,8 @@ const About = () => {
           </p>
 
           <div className="flex flex-wrap items-center gap-4 md:gap-7">
-            {aboutItems.map(({ label, number }, key) => (
-              <div key={key}>
+            {aboutItems.map(({ id, label, number }) => (
+              <div key={id}>
                 <div className="flex items-center md:mb-2">
                   <span className="text-2xl font-semibold md:text-4xl">
                     {number}

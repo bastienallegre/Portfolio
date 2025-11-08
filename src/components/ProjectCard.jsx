@@ -21,9 +21,9 @@ const ProjectCard = ({ imgSrc, title, tags, onClick, classes }) => {
           <h3 className="title-1 mb-3">{title}</h3>
 
           <div className="flex flex-wrap items-center gap-2">
-            {tags.map((label, key) => (
+            {tags.map((label, index) => (
               <span
-                key={key}
+                key={index}
                 className="h-8 text-sm text-zinc-400 bg-zinc-50/5 grid items-center px-3 rounded-lg"
               >
                 {label}
