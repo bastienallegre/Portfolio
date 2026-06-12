@@ -47,6 +47,11 @@ const skillCategories = [
         label: "CSS3",
         desc: "Stylisation web",
       },
+      {
+        imgSrc: "/images/antlr.svg",
+        label: "ANTLR",
+        desc: "Générateur d'analyseurs syntaxiques",
+      }
     ],
   },
   {
@@ -82,6 +87,11 @@ const skillCategories = [
         label: "Angular",
         desc: "Framework TypeScript",
       },
+      {
+        imgSrc: "/images/odoo.svg",
+        label: "Odoo",
+        desc: "Framework Ptyhon",
+      }
     ],
   },
   {
